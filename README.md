@@ -111,3 +111,67 @@ Fix any conflicts, then push your updated feature branch:
 ```bash
 git push origin feature/login-system
 ````
+
+Proposed folder structure
+
+car_rental_sysem/
+│
+├── Backend/
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── vehicle.py
+│   │   ├── lease.py
+│   │   └── vehicle_image.py
+│   │
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── auth_routes.py
+│   │   ├── admin_routes.py
+│   │   ├── client_routes.py
+│   │   └── public_routes.py
+│   │
+├── Frontend/
+│   ├── base.html
+│   ├── auth/
+│   │   ├── login.html
+│   │   └── register.html
+│   │   
+│   ├── admin/
+│   │   ├── dashboard.html
+│   │   ├── add_vehicle.html
+│   │   └── manage_vehicles.html
+│   │   
+│   ├── client/
+│   │   ├── dashboard.html
+│   │   ├── lease_vehicle.html
+│   │   └── return_vehicle.html
+│   │   
+│   │   └── public/
+│   │       ├── landing.html
+│   │       └── vehicle_detail.html
+│   
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   └── main.js
+│   │   └── images/
+│   │
+│   ├── uploads/
+│   │   └── vehicles/
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── decorators.py
+│       └── helpers.py
+│
+├── Docs/
+│   ├── README.md
+│   └── database_schema.md
+│
+└── README.md
